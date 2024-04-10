@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Define el idioma de la pagina -->
+<head>
+    <meta charset="UTF-8"> <!-- Te ayuda a usar caracteres especiales -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Info que ayuda al navegador  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Info que ayuda al navegador -->
+    <title>Dell</title> <!-- Nombre de la pestaña -->
+    <link rel="preload" href="./css/normalize.css" as="style">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="./css/styles.css" as="style"> <!-- Para que cargue mas rapido -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bg">
+            <nav class="navegacion-principal contenedor">
+                <div class="logo">
+                    <img src="./img/Dell_Logo2.png" alt="logo" id="imagen-logo">
+                </div>
+                <a href="#inicio">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#pedidos">Pedidos</a>
+                <a href="#contacto">Contacto</a>
+                <audio id="audio" controls style="display: none;">
+                    <source src="./sonido1.m4a" type="audio/mpeg">
+                </audio>
+                <a class="audio-button" onclick="toggleAudio()">Reproducir/Pausar Música</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="info titulo1 sombra">
+            <h2 class=" hero-titulos">Quiénes somos</h2>
+            <p>Somos un equipo diverso con perspectivas únicas. Nos une nuestro propósito, nuestra estrategia y nuestra cultura. La ambición y el poder de la tecnología nos motivan a impulsar el progreso de la humanidad. Nuestro compromiso con la igualdad, confianza y defensa mutuas es inquebrantable.</p>
+        </div>
+        
+        <div class="foto1">
+            <img src="./img/dell-foto1.jpeg" alt="quienes-somos">
+        </div>
+        
+        <div class="foto2">
+            <img src="./img/dell-foto2.png" alt="mision">
+        </div>
+
+        <div class="info titulo2 sombra">
+            <h2 class="hero-titulos">Misión</h2>
+            <p>En Dell, estamos comprometidos a ser la empresa de tecnología más esencial del mundo. Nos dedicamos a brindar a personas y organizaciones la capacidad de construir su futuro digital y transformar la manera en que trabajan y viven.</p>
+        </div>
+
+        <div class="info titulo3 sombra">
+            <h2 class="hero-titulos">Visión</h2>
+            <p>Nuestra visión es impulsar el progreso humano a través de la tecnología. Buscamos proporcionar soluciones innovadoras, confiables y sostenibles que permitan a las personas en todas partes hacer más y alcanzar su máximo potencial.</p>
+        </div>
+        
+        <div class="video-contenedor">
+            <!-- <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/4M3eqSO-PxU?si=mr5ba8-AOEvGt3FO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+            
+            <video class="video" width="640" height="360" controls>
+                <source src="./img/video.mp4" type="video/mp4">
+                Error al reproducir el video.
+              </video>
+        </div>
+        
+    </section>
+
+    <main class="contenedor sombra" id="productos">
+        <h2>Nuestros productos</h2>
+
+        <div class="servicios">
+            <section class="servicio">
+                <h3>Laptop Latitude 5540</h3>
+                <div class="iconos">
+                    <!--Imagen-->
+                    <img src="./img/latitude-laptops.png" alt="latitude-5540">
+                </div>
+                <p>Precio: $24,919.11 MXN</p>
+                <ul>
+                    <li>Intel® Core™ i7-1355U de 13.ª generación, 12 MB de caché, 10 núcleos, hasta 5,0 GHz</li>
+                    <li>Windows 11 Pro, inglés, español, francés y portugués de Brasil</li>
+                    <li>Intel i7-1355U Trans de 13.ª generación, gráficos integrados Intel, Thunderbolt</li>
+                    <li>16 GB, 2 de 8 GB, DDR4, 3200 MHz</li>
+                    <li>SSD M.2 2230, 512 GB, PCIe Gen4x4, clase 35</li>
+                    <li>15.6 pulgadas pantalla</li>
+                    <li>Desde 1.61 lbs</li>
+                </ul>
+            </section>
+
+            <section class="servicio">
+                <h3>Laptop Latitude 3440</h3>
+                <div class="iconos">
+                    <!--Imagen-->
+                    <img src="./img/latitude-laptops.png" alt="latitude-3440">
+                </div>
+                <p>Precio: $15,740.24 MXN</p>
+                <ul>
+                    <li>Procesador i5-1335U Intel® Core™ de 13.ª generación (12 MB de caché, 10 núcleos, hasta 4,60 GHz Turbo)</li>
+                    <li>Windows 11 Pro, inglés, español, francés y portugués de Brasil</li>
+                    <li>Acceleration, gráficos Intel® Iris® Xe o UHD integrados para procesador i5-1335U</li>
+                    <li>8 GB: 1 x 8 GB, DDR4, 3200 MT/s</li>
+                    <li>SSD M.2 2230 de 256 GB, PCIe NVMe, clase 35</li>
+                    <li>14.0 pulgadas pantalla</li>
+                    <li>Desde 1.54 lbs</li>
+                </ul>
+            </section>
+
+            <section class="servicio">
+                <h3>Laptop Latitude 7640</h3>
+                <div class="iconos">
+                    <!--Imagen-->
+                    <img src="./img/latitude-laptops.png" alt="latitude-7640">
+                </div>
+                <p>Precio: $30,696.41 MXN</p>
+                <ul>
+                    <li>Procesador i5-1335U Intel® Core™ de 13.ª generación (12 MB de caché, 10 núcleos, hasta 4,60 GHz Turbo)</li>
+                    <li>Windows 11 Pro, inglés, español, francés y portugués de Brasil</li>
+                    <li>Tarjeta gráfica Intel® Iris® Xe, procesador i5-1335U sin vPro, memoria LPDDR5 de 16 GB</li>
+                    <li>16 GB: LPDDR5, 4800 MT/s (incorporada)</li>
+                    <li>Unidad de estado sólido PCIe NVMe M.2 de 256 GB, clase 35</li>
+                    <li>16.0 pulgadas pantalla</li>
+                    <li>Desde 1.84 lbs</li>
+                </ul>
+            </section>
+
+            <section class="servicio">
+                <h3>Laptop Precision 3581</h3>
+                <div class="iconos">
+                    <!--Imagen-->
+                    <img src="./img/precision-laptops.png" alt="precision-3581">
+                </div>
+                <p>Precio: $29,474.93 MXN</p>
+                <ul>
+                    <li>Intel® Core™ i5-13600H, vPro® Enterprise (18MB Cache, 12 Cores, 16 Threads, 2.8-4.8 GHz Turbo, 45W)</li>
+                    <li>Windows 11 Pro, inglés, español, francés y portugués de Brasil</li>
+                    <li>NVIDIA® RTX™ A500, GDDR6 de 4 GB</li>
+                    <li>8GB, 1x8GB 5200MT/s SODIMM, DDR5, non-ECC</li>
+                    <li>256 GB, M.2, PCIe NVMe, SSD, Class 35</li>
+                    <li>15.6 pulgadas pantalla</li>
+                    <li>Desde 1.79 lbs</li>
+                </ul>
+            </section>
+
+            <section class="servicio">
+                <h3>Laptop Precision 5480</h3>
+                <div class="iconos">
+                    <!--Imagen-->
+                    <img src="./img/precision-laptops.png" alt="precision-5480">
+                </div>
+                <p>Precio: $41,713.33 MXN</p>
+                <ul>
+                    <li>Intel® Core™ i5-13500H, vPro® Essentials (18MB Cache, 12 Cores, 16 Threads, 2.6-4.7 GHz Turbo, 45W)</li>
+                    <li>Windows 11 Pro, inglés, español, francés y portugués de Brasil</li>
+                    <li>Intel UMA Graphics</li>
+                    <li>16 GB: 2 x 8 GB, LPDDR5, 6400 MT/s</li>
+                    <li>256 GB, M.2 2230, Gen 4 PCIe x4 NVMe, SSD</li>
+                    <li>14.0 pulgadas pantalla</li>
+                    <li>Desde 1.48 lbs</li>
+                </ul>
+            </section>
+
+            <section class="servicio">
+                <h3>Laptop Precision 7780</h3>
+                <div class="iconos">
+                    <!--Imagen-->
+                    <img src="./img/precision-laptops.png" alt="precision-7780">
+                </div>
+                <p>Precio: $54,288.46 MXN</p>
+                <ul>
+                    <li>Intel® Core™ i5-13600HX de 13.ª generación vPro® (24 MB, 14 núcleos, 20 subprocesos, hasta 4,80 GHz Turbo, 55 W)</li>
+                    <li>Windows 11 Pro, inglés, español, francés y portugués de Brasil</li>
+                    <li>NVIDIA® RTX™ 2000 Ada, GDDR6 de 8 GB</li>
+                    <li>8GB, 1x8GB 5600MT/s SODIMM, non-ECC</li>
+                    <li>SSD M.2 2280 NVMe PCIe de 4.ª generación, 512 GB</li>
+                    <li>17.0 pulgadas pantalla</li>
+                    <li>Desde 3.05 lbs</li>
+                </ul>
+            </section>
+
+            <section class="servicio">
+                <h3>Chromebook 2 en 1 Latitude 3140</h3>
+                <div class="iconos">
+                    <!--Imagen-->
+                    <img src="./img/chromebook-2en1-latitude.png" alt="chromebook-2en1-latitude">
+                </div>
+                <p>Precio: $18,624.50 MXN</p>
+                <ul>
+                    <li>Intel® N200 (caché de 6 MB, 4 núcleos, 4 subprocesos)</li>
+                    <li>Windows 11 Pro, inglés, francés, español</li>
+                    <li>Gráficos Intel® UHD para procesador Intel® N200 con 8 GB de memoria, disco duro de 128 GB, TPM y LTE, 2 en 1</li>
+                    <li>8 GB, 1 x 8 GB, LPDDR5X, 4800 MT/s</li>
+                    <li>UFS de 128 GBUFS de 128 GB</li>
+                    <li>11.6 pulgadas pantalla</li>
+                    <li>Desde 1.42 lbs</li>
+                </ul>
+            </section>
+
+            <section class="servicio">
+                <h3>Laptop Latitude Rugged 5430</h3>
+                <div class="iconos">
+                    <!--Imagen-->
+                    <img src="./img/rugged-laptops.png" alt="rugged-laptops">
+                </div>
+                <p>Precio: $39,982.44 MXN</p>
+                <ul>
+                    <li>11th Gen Intel® Core™ i5-1145G7, vPro® (8 MB cache, 4 cores, 8 threads, 2.60 GHz to 4.00 GHz Turbo)</li>
+                    <li>Windows 11 Pro, inglés, francés, español</li>
+                    <li>Intel® Core™ vPro i5-1145G7 with Iris Xe Graphics</li>
+                    <li>8 GB: 1 x 8 GB, DDR4, 3200 MT/s</li>
+                    <li>256 GB, M.2, PCIe NVMe, SSD, Class 35</li>
+                    <li>14.0 pulgadas pantalla</li>
+                    <li>Desde 1.97 lbs</li>
+                </ul>
+            </section>
+
+            <section class="servicio">
+                <h3>Laptop Latitude Rugged 7230</h3>
+                <div class="iconos">
+                    <!--Imagen-->
+                    <img src="./img/rugged-laptops2.png" alt="rugged-laptops2">
+                </div>
+                <p>Precio: $49,622.55 MXN</p>
+                <ul>
+                    <li>12th Gen Intel® Core™ i3-1210U (10 MB cache, 6 cores, 8 threads, up to 4.40 GHz Turbo)</li>
+                    <li>Windows 11 Pro, English, French, Spanish</li>
+                    <li>Integrated Intel® UHD Graphics for i3-1210U non-vPro Processor, 8GB Memory, u-blox NEO-M9N GPS card</li>
+                    <li>8 GB: 2 x 4 GB, LPDDR5, 5200 MT/s (onboard)</li>
+                    <li>256 GB, M.2 2230, PCIe NVMe, SSD, Class 35</li>
+                    <li>12.0 pulgadas pantalla</li>
+                    <li>Desde 1.30 lbs</li>
+                </ul>
+            </section>
+    
+            
+        </div>
+        
+        <section id="pedidos">
+            <h2>Pedidos</h2>
+    
+            <form class="formulario">
+                <fieldset> <!--Permite organizar en grupos los campos de un formulario.-->
+                    <legend>Llena todos los campos para ordenar tu pedido</legend>  <!--Crea un título para un grupo de los campos ( <fieldset> ) de un formulario.-->
+                    
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Tu Nombre">
+                        </div>
+        
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input class="input-text" type="tel" placeholder="Tu Teléfono">
+                        </div>
+        
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input class="input-text" type="email" placeholder="Mail">
+                        </div>
+
+                        <div class="campo">
+                            <label>Fecha y hora</label>
+                            <input class="input-text" type="datetime-local" placeholder="Fecha">
+                        </div>
+
+                        <div class="campo">
+                            <label>Productos</label>
+                            <div class="contenedor-productos-pedidos">
+                                <label for="latitude-5540">
+                                    <input type="checkbox" id="latitude-5540" value="latitude-5540" name="form-productos">Laptop Latitude 5540
+                                </label>
+                                <label for="latitude-3440">
+                                    <input type="checkbox" id="latitude-3440" value="latitude-3440" name="form-productos">Laptop Latitude 3440
+                                </label>
+                                <label for="latitude-7640">
+                                    <input type="checkbox" id="latitude-7640" value="latitude-7640" name="form-productos">Laptop Latitude 7640
+                                </label>
+                                <label for="precision-3581">
+                                    <input type="checkbox" id="precision-3581" value="precision-3581" name="form-productos">Laptop Precision 3581
+                                </label>
+                                <label for="precision-5480">
+                                    <input type="checkbox" id="precision-5480" value="precision-5480" name="form-productos">Laptop Precision 5480
+                                </label>
+                                <label for="precision-7780">
+                                    <input type="checkbox" id="precision-7780" value="precision-7780" name="form-productos">Laptop Precision 7780
+                                </label>
+                                <label for="chromebook-2en1-latitude">
+                                    <input type="checkbox" id="chromebook-2en1-latitude" value="chromebook-2en1-latitude" name="form-productos">Chromebook 2 en 1 Latitude 3140
+                                </label>
+                                <label for="rugged-5430">
+                                    <input type="checkbox" id="rugged-5430" value="rugged-5430" name="form-productos">Laptop Latitude Rugged 5430
+                                </label>
+                                <label for="rugged-7230">
+                                    <input type="checkbox" id="rugged-7230" value="rugged-7230" name="form-productos">Laptop Latitude Rugged 7230
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-100" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+
+    <footer class="footer" id="contacto">
+        <p>Todos los derechos reservados. Dell-SO</p>
+        <p>Contacto: +528183383599</p>
+        <p>Ubicación: Paseo de los Leones 522-A, Mitras Centro, 64460 Monterrey, N.L.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
